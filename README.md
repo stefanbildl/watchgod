@@ -7,7 +7,7 @@ Unlike the `context.WithTimeout` function in Go, which automatically cancels aft
 ## Go Get watchgod
 Run this command to try it out!
 ```bash
- go get github.com/stefanbildl/watchgod@v1.0.1
+ go get github.com/stefanbildl/watchgod@v1.0.2
 ```
 
 ## WithWatchdog
