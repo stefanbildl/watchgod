@@ -2,6 +2,11 @@
 A simple watchdog context written in Go
 
 
+## Go Get watchgod
+Run this command to try it out!
+```bash
+ go get github.com/stefanbildl/watchgod@v1.0.1
+```
 
 ## WithWatchdog
 The WithWatchdog function returns a context that is derived from the provided parent context, along with a ResetFn function to reset the watchdog timer.
