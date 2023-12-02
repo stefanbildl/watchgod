@@ -7,6 +7,7 @@ import (
 
 
 type ResetFn func ()
+
 // Extends the parent context with a watchdog timer that can be reset
 // using the provided reset function.
 // When the watchdog timer with the given duration elapses without being reset in time, 
