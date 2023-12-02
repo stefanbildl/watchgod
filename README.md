@@ -1,6 +1,8 @@
 # watchgod
 A simple watchdog context written in Go
 
+## What does it do?
+Unlike the `context.WithTimeout` function in Go, which automatically cancels after a fixed time, Watchgod's timer, created using `WithWatchdog`, can be reset. This feature grants users the ability to extend the context and prevent cancellation as needed, offering more fine-grained control over the context's lifecycle.
 
 ## Go Get watchgod
 Run this command to try it out!
