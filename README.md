@@ -55,8 +55,7 @@ func main() {
 
 
 # Contributing
-
-We welcome contributions from the community to improve this project! Please follow these guidelines to contribute effectively:
+I welcome contributions from the community to improve this project! Please follow these guidelines to contribute effectively:
 
 ## How to Contribute
 
@@ -93,12 +92,8 @@ We welcome contributions from the community to improve this project! Please foll
 
 If you encounter bugs, have feature requests, or want to propose enhancements, please open an issue in the repository. Ensure to include relevant details and steps to reproduce the issue.
 
-## Code of Conduct
-
-This project follows the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md). Please adhere to this code by treating all contributors and users with respect.
-
 ## Questions and Support
 
-For questions or support related to the project, please open an issue in the repository or reach out to the maintainers.
+For questions or support related to the project, please open an issue in the repository or reach out to me.
 
-We appreciate and welcome your contributions to this project!
+I appreciate and welcome your contributions to this project!
