@@ -29,13 +29,14 @@ import (
 	"context"
 	"fmt"
 	"time"
+	"github.com/stefanbildl/watchgod"
 )
 
 func main() {
 	parentContext := context.Background()
 	timeoutDuration := 5 * time.Second
 
-	ctx, reset := WithWatchdog(parentContext, timeoutDuration)
+	ctx, reset := watchgod.WithWatchdog(parentContext, timeoutDuration)
 
 	// Use the context and reset function as needed
 	// ...
