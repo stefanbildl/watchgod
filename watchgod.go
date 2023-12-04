@@ -13,7 +13,7 @@ type ResetFn func()
 // the returned context is cancelled
 func WithWatchdog(parent context.Context, timeout time.Duration) (context.Context, ResetFn) {
 	c, cancel := context.WithCancel(parent)
-	reset := make(chan struct{}, 1)
+	reset := make(chan struct{})
 	go func() {
 		t := time.NewTimer(timeout)
 	b:
@@ -33,6 +33,9 @@ func WithWatchdog(parent context.Context, timeout time.Duration) (context.Contex
 		}
 	}()
 	return c, func() {
-		reset <- struct{}{}
+		select {
+		case <-c.Done():
+		case reset <- struct{}{}:
+		}
 	}
 }
